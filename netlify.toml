@@ -1,9 +1,9 @@
 [build]
-  command = "npm run build"
+  command = "npm install && npm run build"
   publish = "dist"
 
 [build.environment]
-  NODE_ENV = "production"
+  NODE_ENV = "development"
 
 [[headers]]
   for = "/*"
