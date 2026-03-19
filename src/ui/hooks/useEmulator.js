@@ -4,7 +4,7 @@ import {
     useMemo,
     useRef,
     useState
-} from 'https://esm.sh/react@18.3.1';
+} from 'react';
 
 import { ROMDetector } from '../../utils/detector.js';
 import { CoreLoader } from '../../core/loader.js';

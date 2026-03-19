@@ -31,8 +31,8 @@ Multi-console browser emulator platform with dynamic runtime core loading, WebAs
 - `src/storage`: IndexedDB and IDBFS helper layer
 - `src/controllers`: input abstraction
 - `src/ui`: React components, hooks, and context
-- `src/App.jsx`: top-level application composition
-- `src/main.jsx`: React bootstrap entry
+- `src/App.js`: top-level application composition
+- `src/main-react.js`: React bootstrap entry
 
 ## File Map
 
@@ -100,7 +100,31 @@ Default keyboard mapping (customizable from settings):
 
 ## Running
 
-This project currently uses browser-native ES modules and React via ESM CDN in `src/main.jsx`.
+This project now uses Vite for development and production builds.
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run in development mode:
+
+```bash
+npm run dev
+```
+
+Create production build:
+
+```bash
+npm run build
+```
+
+Preview production build locally:
+
+```bash
+npm run preview
+```
 
 ### Local static server (example)
 

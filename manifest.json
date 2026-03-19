@@ -1,0 +1,16 @@
+{
+  "name": "WebEmu Platform",
+  "short_name": "WebEmu",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e131b",
+  "theme_color": "#18c4b8",
+  "description": "Multi-console web emulator platform for GBA, NDS, and PSP.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
