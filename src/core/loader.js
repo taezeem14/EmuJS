@@ -10,22 +10,17 @@ export class CoreLoader {
         },
         nds: {
             js: [
-                'https://cdn.jsdelivr.net/gh/badda71/melonDS-wasm@main/melonDS.js',
-                'https://unpkg.com/melonds-wasm/dist/melonds.js'
+                'https://cdn.jsdelivr.net/gh/44670/melonDS-wasm@master/wasm-port/a.out.js',
+                '/cores/melonDS.js'
             ],
             wasm: [
-                'https://cdn.jsdelivr.net/gh/badda71/melonDS-wasm@main/melonDS.wasm',
-                'https://unpkg.com/melonds-wasm/dist/melonds.wasm'
+                'https://cdn.jsdelivr.net/gh/44670/melonDS-wasm@master/wasm-port/a.out.wasm',
+                '/cores/melonDS.wasm'
             ]
         },
         psp: {
             js: [
-                'https://js.ppsspp.org/1.17.1/ppsspp.js',
-                'https://cdn.jsdelivr.net/gh/hrydgard/ppsspp@master/ppsspp.js'
-            ],
-            wasm: [
-                'https://js.ppsspp.org/1.17.1/ppsspp.wasm',
-                'https://cdn.jsdelivr.net/gh/hrydgard/ppsspp@master/ppsspp.wasm'
+                '/cores/jspspemu.js'
             ]
         }
     };
