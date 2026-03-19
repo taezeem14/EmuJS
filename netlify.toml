@@ -1,0 +1,18 @@
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_ENV = "production"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Required for SharedArrayBuffer / WASM multi-threading (Crucial for PSP/NDS)
+    Cross-Origin-Embedder-Policy = "require-corp"
+    Cross-Origin-Opener-Policy = "same-origin"
+
+[[headers]]
+  for = "/*.wasm"
+  [headers.values]
+    Content-Type = "application/wasm"
+    Cache-Control = "public, max-age=31536000"
