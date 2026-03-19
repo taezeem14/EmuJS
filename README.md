@@ -43,7 +43,7 @@ Multi-console browser emulator platform with dynamic runtime core loading, WebAs
 - `src/storage/db.js`: IndexedDB stores (`saves`, `states`, `settings`) + IDBFS sync helpers
 - `src/controllers/input.js`: keyboard/gamepad/touch/stylus input system
 - `src/ui/hooks/useEmulator.js`: React controller hook bridging UI and emulator engine
-- `src/ui/context/EmulatorContext.jsx`: shared emulator state context
+- `src/ui/context/EmulatorContext.js`: shared emulator state context
 - `src/ui/components/*`: UI modules (screen, controls, save manager, settings, status, touch overlay)
 
 ## ROM Support
@@ -137,7 +137,7 @@ Use any static server that serves the workspace root with proper CORS and WASM h
 
 `netlify.toml` is included and configures:
 
-- publish root
+- Vite build command and `dist` publish directory
 - cross-origin isolation headers
 - wasm content type and caching
 
